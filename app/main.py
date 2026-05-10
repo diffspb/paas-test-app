@@ -16,6 +16,7 @@ async def root():
         "message": "PaaS test application is running",
         "version": APP_VERSION,
         "environment": ENVIRONMENT,
+        "dev": "true",
     }
 
 
