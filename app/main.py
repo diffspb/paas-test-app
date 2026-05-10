@@ -3,7 +3,7 @@ import os
 from fastapi import FastAPI
 
 SERVICE_NAME = "paas-test"
-APP_VERSION = os.getenv("APP_VERSION", "0.2.0")
+APP_VERSION = os.getenv("APP_VERSION", "0.2.1")
 ENVIRONMENT = os.getenv("APP_ENV", "local")
 
 app = FastAPI(title="PaaS Test App", version=APP_VERSION)
