@@ -1,0 +1,14 @@
+name: paas-test
+service: app
+port: 8000
+compose:
+  files:
+    - docker-compose.yml
+    - docker-compose.prod.yml
+routes:
+  - subdomain: paas-test
+    auth: none
+healthcheck:
+  path: /health
+  retries: 12
+  interval_seconds: 2
